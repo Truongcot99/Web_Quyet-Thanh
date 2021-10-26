@@ -29,6 +29,7 @@
             border: 1px solid $amber-color;
             border-radius: 50%;
             margin-right: 12px;
+            flex-shrink: 0;
     
             i {
                 color: $blue-color;
@@ -98,6 +99,11 @@
 
         &-column {
             margin-bottom: 30px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
         }
     }
 }

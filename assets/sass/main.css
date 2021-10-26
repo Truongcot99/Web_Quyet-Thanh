@@ -1609,6 +1609,8 @@ body.noscroll {
   border: 1px solid #FBBB12;
   border-radius: 50%;
   margin-right: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .footer-contact-item .icon i {
@@ -1685,6 +1687,10 @@ body.noscroll {
   }
   .footer-column {
     margin-bottom: 30px;
+  }
+  .footer .icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
