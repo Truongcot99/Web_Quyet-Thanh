@@ -1,7 +1,7 @@
 .category-product {
     position: relative;
     padding-bottom: 69px;
-    background-color: $blue-color;
+    background: linear-gradient(to right, $green-color, $greenlight-color);
 
     &-background {
         position: absolute;
@@ -70,7 +70,7 @@
         height: 51px;
         border-radius: 50%;
         color: white;
-        background-color: $amber-color;
+        background-color: $orange-color;
         font-size: 1.5em;
     }
 
@@ -81,7 +81,7 @@
         text-align: center;
 
         &:hover {
-            color: $amber-color;
+            color: $orange-color;
         }
     }
 
@@ -109,7 +109,7 @@
         }
 
         .slick-active button {
-            background-color: $amber-color;
+            background-color: $orange-color;
         }
     }
     @media screen and (max-width: 767px) {

@@ -1,5 +1,5 @@
 .footer {
-    
+    border-top: 1px solid $greenlight-color;
     &-container {
         padding-top: 48px;
         padding-bottom: 40px;
@@ -26,13 +26,13 @@
             align-items: center;
             width: 38px;
             height: 38px;
-            border: 1px solid $amber-color;
+            border: 1px solid $orange-color;
             border-radius: 50%;
             margin-right: 12px;
             flex-shrink: 0;
     
             i {
-                color: $blue-color;
+                color: $green-color;
             }
         }
     }
@@ -59,18 +59,12 @@
                 margin-right: 12px;
                 width: 40px;
                 height: 40px;
-                background-color: $blue-color;
+                background: linear-gradient(to right, $green-color, $greenlight-color);
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                &:hover {
-                    background-color: $amber-color;
-                }
-                &:hover a{
-                    color: $blue-color;
-                }
                 a {
                     padding: 12px;
                     color: white;

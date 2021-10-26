@@ -20,7 +20,7 @@
            display: block;
            width: 40px;
            height: 4px;
-           background-color: $blue-color;
+           background-color: $green-color;
            transition: all 0.3s ease-in;
 
            &:not(:last-child) {
@@ -57,7 +57,7 @@
                 left: 0;
                 right: 0;
                 height: 2px;
-                background-color: $amber-color;
+                background-color: $orange-color;
                 transform-origin: bottom right;
                 transform: scaleX(0);
                 transition: transform 0.5s ease;
@@ -76,7 +76,7 @@
         align-items: center;
         flex-direction: column;
         padding: 17px 16px;
-        background-color: $amber-color;
+        background-color: $orange-color;
 
         &-link {
             position: relative;
@@ -97,7 +97,7 @@
             line-height: 12px;
             padding: 6.5px 6px;
             color: white;
-            background-color: $blue-color;
+            background-color: $green-color;
             border-radius: 50%;
         }
 

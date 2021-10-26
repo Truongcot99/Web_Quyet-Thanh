@@ -1,9 +1,10 @@
 .partner {
     padding-bottom: 45px;
-    background-color: $amber-color;
+    background-color: $greenlight-color;
     &-heading {
         padding-top: 24px;
         padding-bottom: 36px;
+        color: white;
     }
 
     &-list {
@@ -32,11 +33,11 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 1px solid $blue-color;
+        border: 1px solid white;
         background-color: transparent;
 
         i {
-            color: $blue-color;
+            color: white;
         }
     }
 

@@ -22,7 +22,7 @@
 
         .nav-link.active {
             border-radius: 3px;
-            background-color: $amber-color;
+            background-color: $greenlight-color;
             color: white;
         }
     }
@@ -41,7 +41,8 @@
 
         &:hover  {
             .product-bag {
-                background-color: $amber-color;
+                background: linear-gradient(to right, $green-color, $greenlight-color);
+                // animation: background 2s infinite;
                 border-color: white;
             }
 
@@ -86,7 +87,7 @@
 
     &-price {
         font-size: 1.125em;
-        color: $amber-color;
+        color: $greenlight-color;
         line-height: 25px;
         font-weight: 700;
     }
@@ -103,7 +104,7 @@
         transition: all 0.3s ease-in;
 
         i {
-            color: $amber-color;
+            color: $greenlight-color;
         }
     }
 

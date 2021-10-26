@@ -25,7 +25,7 @@ body {
     font-size: 1em;
     font-family: $font-family;
     color: white;
-    background-color: $blue-color;
+    background-color: $greenlight-color;
 
     &::before {
         content: '';
@@ -36,14 +36,14 @@ body {
         width: 2em;
         height: 1em;
         border-radius: 50%;
-        background-color: $amber-color;
+        background-color: $orange-color;
         transform-origin: center;
         transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
         transition: transform 0.5s ease-in-out;
       }
       
       &:hover {
-        color: $blue-color;
+        color: white;
       }
       
       &:hover::before {
@@ -70,7 +70,7 @@ body {
         content: "";
         width: 92px;
         height: 1px;
-        background-color: $blue-color;
+        background-color: $greenlight-color;
     }
 
     &::before {
@@ -100,7 +100,7 @@ body {
 	right: 20px;
 	text-decoration: none;
 	color: white;
-	background-color: $blue-color;
+	background-color: $green-color;
 	font-size: 1em;
 	padding: 12px 14px;
 	display: none;
@@ -113,7 +113,7 @@ body {
 }
 
 .go-top:hover {
-	background-color: $amber-color;
+	background-color: $orange-color;
 }
 
 .breadcrumb {
@@ -123,7 +123,7 @@ body {
 
         a {
             font-size: 1em;
-            color: $blue-color;
+            color: $greenlight-color;
             font-weight: 700;
         }
 

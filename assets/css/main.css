@@ -63,7 +63,7 @@ img {
   text-align: center;
   font-family: "UTM HelvetIns";
   text-transform: uppercase;
-  color: #223670;
+  color: #F68124;
 }
 .heading-small {
   font-family: "UTM HelvetIns";
@@ -97,6 +97,17 @@ img {
     font-size: 1.5em;
   }
 }
+@keyframes background {
+  0% {
+    background: linear-gradient(to right, #00844A, #8DC73F);
+  }
+  50% {
+    background: linear-gradient(to left, #00844A, #8DC73F);
+  }
+  100% {
+    background: linear-gradient(to right, #00844A, #8DC73F);
+  }
+}
 body {
   font-size: 1em;
   line-height: 1;
@@ -123,7 +134,7 @@ body.noscroll {
   font-size: 1em;
   font-family: "UTM Neo Sans Intel";
   color: white;
-  background-color: #223670;
+  background-color: #8DC73F;
 }
 .btn::before {
   content: "";
@@ -134,13 +145,13 @@ body.noscroll {
   width: 2em;
   height: 1em;
   border-radius: 50%;
-  background-color: #FBBB12;
+  background-color: #F68124;
   transform-origin: center;
   transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
   transition: transform 0.5s ease-in-out;
 }
 .btn:hover {
-  color: #223670;
+  color: white;
 }
 .btn:hover::before {
   transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
@@ -164,7 +175,7 @@ body.noscroll {
   content: "";
   width: 92px;
   height: 1px;
-  background-color: #223670;
+  background-color: #8DC73F;
 }
 .title-before::before {
   transform: translateX(calc(-50% - 26px));
@@ -192,7 +203,7 @@ body.noscroll {
   right: 20px;
   text-decoration: none;
   color: white;
-  background-color: #223670;
+  background-color: #00844A;
   font-size: 1em;
   padding: 12px 14px;
   display: none;
@@ -204,7 +215,7 @@ body.noscroll {
 }
 
 .go-top:hover {
-  background-color: #FBBB12;
+  background-color: #F68124;
 }
 
 .breadcrumb {
@@ -215,7 +226,7 @@ body.noscroll {
 }
 .breadcrumb-item a {
   font-size: 1em;
-  color: #223670;
+  color: #8DC73F;
   font-weight: 700;
 }
 .breadcrumb-item.active {
@@ -271,7 +282,7 @@ body.noscroll {
 }
 .topbar-icon {
   font-size: 0.8125em;
-  color: #223670;
+  color: #00844A;
   margin-right: 6px;
 }
 .topbar a {
@@ -300,7 +311,7 @@ body.noscroll {
   display: block;
   width: 40px;
   height: 4px;
-  background-color: #223670;
+  background-color: #00844A;
   transition: all 0.3s ease-in;
 }
 .header-toggle span:not(:last-child) {
@@ -332,7 +343,7 @@ body.noscroll {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #FBBB12;
+  background-color: #F68124;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -347,7 +358,7 @@ body.noscroll {
   align-items: center;
   flex-direction: column;
   padding: 17px 16px;
-  background-color: #FBBB12;
+  background-color: #F68124;
 }
 .header-cart-link {
   position: relative;
@@ -366,7 +377,7 @@ body.noscroll {
   line-height: 12px;
   padding: 6.5px 6px;
   color: white;
-  background-color: #223670;
+  background-color: #00844A;
   border-radius: 50%;
 }
 .header-cart-name {
@@ -428,7 +439,7 @@ body.noscroll {
 .navbar {
   position: relative;
   padding: 0;
-  background-color: #223670;
+  background-color: #00844A;
 }
 .navbar-category {
   position: relative;
@@ -436,7 +447,7 @@ body.noscroll {
   justify-content: space-between;
   align-items: center;
   padding: 18px 20px;
-  background-color: #FBBB12;
+  background-color: #8DC73F;
   cursor: pointer;
   margin-right: 70px;
 }
@@ -488,7 +499,7 @@ body.noscroll {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #FBBB12;
+  background-color: #F68124;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -563,7 +574,7 @@ body.noscroll {
   margin-left: 9px;
 }
 .navbar-phone a:hover {
-  color: #FBBB12;
+  color: #F68124;
 }
 @media screen and (max-width: 1023px) {
   .navbar-category {
@@ -648,13 +659,13 @@ body.noscroll {
   z-index: 1;
   top: -4%;
   right: -4%;
-  background-color: #223670;
+  background-image: linear-gradient(to right, #00844A, #8DC73F);
 }
 .introduce-left::after {
   z-index: 3;
   bottom: -4%;
   left: -4%;
-  background-color: #223670;
+  background-image: linear-gradient(to right, #00844A, #8DC73F);
   opacity: 0.5;
 }
 .introduce-img {
@@ -665,8 +676,8 @@ body.noscroll {
 .introduce-img--sub {
   position: absolute;
   z-index: 10;
-  right: -14%;
-  bottom: -16%;
+  left: -50%;
+  bottom: -12%;
 }
 .introduce-desc {
   font-size: 1.125em;
@@ -674,7 +685,7 @@ body.noscroll {
   text-transform: uppercase;
 }
 .introduce-title {
-  color: #FBBB12;
+  color: #F68124;
   text-transform: uppercase;
   margin-bottom: 20px;
   line-height: 42px;
@@ -720,7 +731,7 @@ body.noscroll {
 .category-product {
   position: relative;
   padding-bottom: 69px;
-  background-color: #223670;
+  background: linear-gradient(to right, #00844A, #8DC73F);
 }
 .category-product-background {
   position: absolute;
@@ -778,7 +789,7 @@ body.noscroll {
   height: 51px;
   border-radius: 50%;
   color: white;
-  background-color: #FBBB12;
+  background-color: #F68124;
   font-size: 1.5em;
 }
 .category-product-name {
@@ -788,7 +799,7 @@ body.noscroll {
   text-align: center;
 }
 .category-product-name:hover {
-  color: #FBBB12;
+  color: #F68124;
 }
 .category-product .slick-dots {
   list-style: none;
@@ -810,7 +821,7 @@ body.noscroll {
   outline: none;
 }
 .category-product .slick-dots .slick-active button {
-  background-color: #FBBB12;
+  background-color: #F68124;
 }
 @media screen and (max-width: 767px) {
   .category-product-thumbnail img {
@@ -849,7 +860,7 @@ body.noscroll {
 }
 .product .nav-item .nav-link.active {
   border-radius: 3px;
-  background-color: #FBBB12;
+  background-color: #8DC73F;
   color: white;
 }
 .product-item {
@@ -864,7 +875,7 @@ body.noscroll {
   border-radius: 10px;
 }
 .product-item:hover .product-bag {
-  background-color: #FBBB12;
+  background: linear-gradient(to right, #00844A, #8DC73F);
   border-color: white;
 }
 .product-item:hover .product-bag span {
@@ -900,7 +911,7 @@ body.noscroll {
 }
 .product-price {
   font-size: 1.125em;
-  color: #FBBB12;
+  color: #8DC73F;
   line-height: 25px;
   font-weight: 700;
 }
@@ -916,7 +927,7 @@ body.noscroll {
   transition: all 0.3s ease-in;
 }
 .product-bag i {
-  color: #FBBB12;
+  color: #8DC73F;
 }
 @media screen and (max-width: 767px) {
   .product-nav {
@@ -997,7 +1008,7 @@ body.noscroll {
 }
 .testimonial .arrow-prev:hover,
 .testimonial .arrow-next:hover {
-  background-color: #FBBB12;
+  background-color: #F68124;
   color: white;
 }
 .testimonial .arrow-prev {
@@ -1052,7 +1063,7 @@ body.noscroll {
   left: 26px;
   transform: translateY(-50%);
   padding: 10px 14px;
-  background-color: #FBBB12;
+  background-color: #8DC73F;
   color: white;
 }
 .posts-content {
@@ -1072,7 +1083,7 @@ body.noscroll {
   word-break: break-word;
 }
 .posts-heading:hover {
-  color: #FBBB12;
+  color: #F68124;
 }
 .posts-link {
   margin-top: 20px;
@@ -1086,7 +1097,7 @@ body.noscroll {
   letter-spacing: 2px;
 }
 .posts-link a, .posts-link i {
-  color: #FBBB12;
+  color: #F68124;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1143,7 +1154,7 @@ body.noscroll {
   background: url(../image/number-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #223670;
+  background-color: #00844a;
 }
 .numbers-heading {
   text-transform: uppercase;
@@ -1184,14 +1195,18 @@ body.noscroll {
     font-size: 1.75em;
     margin-bottom: 0;
   }
+  .numbers-heading {
+    margin-bottom: 8px;
+  }
 }
 .partner {
   padding-bottom: 45px;
-  background-color: #FBBB12;
+  background-color: #8DC73F;
 }
 .partner-heading {
   padding-top: 24px;
   padding-bottom: 36px;
+  color: white;
 }
 .partner-list {
   padding: 0 20px;
@@ -1217,12 +1232,12 @@ body.noscroll {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #223670;
+  border: 1px solid white;
   background-color: transparent;
 }
 .partner .chevron-prev i,
 .partner .chevron-next i {
-  color: #223670;
+  color: white;
 }
 .partner .chevron-prev {
   left: -4%;
@@ -1247,6 +1262,9 @@ body.noscroll {
     right: 0;
   }
 }
+.footer {
+  border-top: 1px solid #8DC73F;
+}
 .footer-container {
   padding-top: 48px;
   padding-bottom: 40px;
@@ -1270,13 +1288,13 @@ body.noscroll {
   align-items: center;
   width: 38px;
   height: 38px;
-  border: 1px solid #FBBB12;
+  border: 1px solid #F68124;
   border-radius: 50%;
   margin-right: 12px;
   flex-shrink: 0;
 }
 .footer-contact-item .icon i {
-  color: #223670;
+  color: #00844A;
 }
 .footer-list {
   list-style: none;
@@ -1296,17 +1314,11 @@ body.noscroll {
   margin-right: 12px;
   width: 40px;
   height: 40px;
-  background-color: #223670;
+  background: linear-gradient(to right, #00844A, #8DC73F);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer-social ul li:hover {
-  background-color: #FBBB12;
-}
-.footer-social ul li:hover a {
-  color: #223670;
 }
 .footer-social ul li a {
   padding: 12px;
@@ -1344,7 +1356,7 @@ body.noscroll {
   font-family: "UTM HelvetIns";
   margin-bottom: 24px;
   display: block;
-  color: #223670;
+  color: #F68124;
 }
 .contact-content {
   padding-left: 40px;
@@ -1359,14 +1371,14 @@ body.noscroll {
   margin-bottom: 16px;
 }
 .contact-info p i {
-  color: #223670;
+  color: #F68124;
   margin-right: 8px;
 }
 .contact-info p a {
   color: black;
 }
 .contact-info p a:hover {
-  color: #223670;
+  color: #F68124;
 }
 .contact .form-control {
   font-size: 1rem;
@@ -1389,7 +1401,7 @@ body.noscroll {
   margin-bottom: 48px;
   font-family: "UTM HelvetIns";
   line-height: 46px;
-  color: #223670;
+  color: #00844A;
   text-transform: uppercase;
 }
 .post-heading::after {
@@ -1397,7 +1409,7 @@ body.noscroll {
   content: "";
   width: 100px;
   height: 4px;
-  background-color: #FBBB12;
+  background-color: #F68124;
   bottom: -12px;
   left: 0;
 }
@@ -1441,7 +1453,7 @@ body.noscroll {
   content: "";
   width: 50px;
   height: 4px;
-  background-color: #FBBB12;
+  background-color: #F68124;
   left: 0;
   bottom: -12px;
 }
@@ -1449,7 +1461,7 @@ body.noscroll {
   list-style: none;
 }
 .post-item {
-  border-bottom: 1px solid #FBBB12;
+  border-bottom: 1px solid #F68124;
 }
 .post-link {
   padding: 10px 0;
@@ -1457,7 +1469,7 @@ body.noscroll {
   color: inherit;
 }
 .post-link:hover {
-  color: #FBBB12;
+  color: #F68124;
 }
 .post-link img {
   margin-right: 8px;
@@ -1487,7 +1499,7 @@ body.noscroll {
   content: "";
   width: 50px;
   height: 4px;
-  background-color: #FBBB12;
+  background-color: #F68124;
   left: 0;
   bottom: -12px;
 }
@@ -1512,7 +1524,7 @@ body.noscroll {
   word-break: break-word;
 }
 .post-related-link h2:hover {
-  color: #FBBB12;
+  color: #F68124;
 }
 .post form {
   margin-top: 36px;

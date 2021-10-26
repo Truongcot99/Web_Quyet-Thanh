@@ -7,7 +7,7 @@
         margin-bottom: 48px;
         font-family: $font-heading;
         line-height: 46px;
-        color: $blue-color;
+        color: $green-color;
         text-transform: uppercase;
 
         &::after {
@@ -15,7 +15,7 @@
             content: "";
             width: 100px;
             height: 4px;
-            background-color: $amber-color;
+            background-color: $orange-color;
             bottom: -12px;
             left: 0;
         }
@@ -70,7 +70,7 @@
             content: "";
             width: 50px;
             height: 4px;
-            background-color: $amber-color;
+            background-color: $orange-color;
             left: 0;
             bottom: -12px;
         }
@@ -81,7 +81,7 @@
     }
 
     &-item {
-        border-bottom: 1px solid $amber-color;
+        border-bottom: 1px solid $orange-color;
     }
 
     &-link {
@@ -90,7 +90,7 @@
         color: inherit;
 
         &:hover {
-            color: $amber-color;
+            color: $orange-color;
         }
 
         img {
@@ -127,7 +127,7 @@
                 content: "";
                 width: 50px;
                 height: 4px;
-                background-color: $amber-color;
+                background-color: $orange-color;
                 left: 0;
                 bottom: -12px;
             }
@@ -159,7 +159,7 @@
 
 
                 &:hover {
-                    color: $amber-color;
+                    color: $orange-color;
                 }
             }
         }

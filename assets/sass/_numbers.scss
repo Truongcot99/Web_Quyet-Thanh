@@ -4,7 +4,7 @@
     background: url(../image/number-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: $blue-color;
+    background-color: rgba($color: $green-color, $alpha: 1);
 
     &-heading {
         text-transform: uppercase;
@@ -49,6 +49,9 @@
         &-quantity {
             font-size: 1.75em;
             margin-bottom: 0;
+        }
+        &-heading {
+            margin-bottom: 8px;
         }
     }
 }

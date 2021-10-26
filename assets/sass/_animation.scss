@@ -1,0 +1,14 @@
+@keyframes background {
+    0% {
+        background: linear-gradient(to right, $green-color, $greenlight-color);
+    }
+
+    50% {
+        background: linear-gradient(to left, $green-color, $greenlight-color);
+    }
+
+    100% {
+        background: linear-gradient(to right, $green-color, $greenlight-color);
+
+    }
+}
