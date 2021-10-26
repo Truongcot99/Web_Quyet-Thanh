@@ -1,0 +1,113 @@
+.introduce {
+    position: relative;
+    padding-top: 89px;
+    padding-bottom: 71px;
+
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &-left {
+        position: relative;
+        flex-shrink: 0;
+        margin-right: 75px;
+        width: 537px;
+        height: 517px;
+        
+        &::before,
+        &::after {
+            content: "";
+            position:absolute;
+            width: 155px;
+            height: 155px;
+        }
+    
+        &::before {
+            z-index: 1;
+            top: -4%;
+            right: -4%;
+            background-color: $blue-color;
+        }
+    
+        &::after {
+            z-index: 3;
+            bottom: -4%;
+            left: -4%;
+            background-color: #223670;
+            opacity: 0.5;
+        }
+    }
+
+    &-img {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    &-img--sub {
+        position: absolute;
+        z-index: 10;
+        right: -14%;
+        bottom: -16%;
+    }
+
+    &-desc {
+        font-size: 1.125em;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        color: $amber-color;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        line-height: 42px;
+    }
+
+    &-btn {
+        position: relative;
+        z-index: 1;
+        margin-top: 32px;
+    }
+
+    
+}
+@media screen and (max-width: 1023px) {
+    .introduce {
+        padding-top: 48px;
+
+        &-container {
+            flex-direction: column-reverse;
+        }
+
+        &-btn {
+            margin-top: 0;
+            margin-bottom: 36px;
+        }
+
+        &-left {
+            width: 96%;
+            height: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+.introduce-left {
+    &::before,
+    &::after {
+        width: 100px;
+        height: 100px;
+    }
+}
+.introduce-img--sub {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    z-index: 10;
+    right: -10%;
+    bottom: -24%;
+}
+}

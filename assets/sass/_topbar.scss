@@ -1,0 +1,42 @@
+.topbar {
+    background-color: $gray-color;
+
+    &-container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-left {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item {
+        position: relative;
+        padding: 11px 16px;
+
+        &:last-child::after {
+            content: "";
+            position: absolute;
+            top: 36%;
+            left: 0;
+            width: 1px;
+            height: 15px;
+            background-color: $text-color;
+        }
+    }
+
+    &-icon {
+        font-size: 0.8125em;
+        color: $blue-color;
+        margin-right: 6px;
+    }
+
+    a {
+        font-size: 0.8125em;
+        color: $text-color;
+    }
+}
+

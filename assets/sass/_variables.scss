@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    font-display: swap;
+    src: url('../Font/UTM\ Neo\ Sans\ Intel.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'UTM HelvetIns';
+    font-display: swap;
+    src: url('../Font/UTM\ HelvetIns.ttf') format('truetype');
+}
+
+$font-family: 'UTM Neo Sans Intel';
+$font-heading: 'UTM HelvetIns';
+
+$gray-color: #F3F3F3;
+$blue-color: #223670;
+$amber-color: #FBBB12;
+$text-color: #656565;

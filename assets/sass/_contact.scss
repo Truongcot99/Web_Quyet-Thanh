@@ -1,0 +1,56 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 48px;
+
+    &-title {
+        font-size: 2em;
+        font-family: $font-heading;
+        margin-bottom: 24px;
+        display: block;
+        color: $blue-color;
+    }
+
+    &-content {
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+
+    &-desc {
+        margin-bottom: 20px;
+        max-width: 440px;
+    }
+
+    &-info {
+        p {
+            font-size: 1em;
+            margin-bottom: 16px;
+
+            i {
+                color: $blue-color;
+                margin-right: 8px;
+            }
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: $blue-color;
+                }
+            }
+        }
+    }
+    .form-control {
+        font-size: 1rem;
+        font-family: $font-family;
+        margin-bottom: 20px;
+        padding: 16px 8px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+.contact-content {
+    padding: 0 15px;
+    margin-top: 30px;
+}
+}

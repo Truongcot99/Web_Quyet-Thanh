@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  }
+  *,*:before,*:after {
+  box-sizing: border-box;
+  }
+  input,
+  textarea,
+  select,
+  button{
+  outline: none;
+  }
+  input{
+  line-height: normal;
+  }
+  label,
+  button{
+  cursor: pointer;
+  }
+  a, a:hover {
+  text-decoration: none;
+  }
+  a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+      background: 0 0;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      vertical-align: baseline;
+  }
+  img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  }
