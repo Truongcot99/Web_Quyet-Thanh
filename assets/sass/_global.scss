@@ -145,6 +145,11 @@ body {
     .hide-mobile {
         display: none !important;
     }
+
+    .box-header {
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
 }
 
 // hide-pc
@@ -152,5 +157,7 @@ body {
 .hide-pc {
     display: none !important;
 }
+
+
 }
 

@@ -80,7 +80,18 @@ $(document).ready(function () {
         } else {
             $('.go-top').fadeOut(200);
         }
+
     });
+
+    $(window).scroll(function () {
+        const headerHeight = $('.header').height();
+        if ($(this).scrollTop() > headerHeight) {
+            $('.header').addClass('sticky')
+        }
+        else {
+            $('.header').removeClass('sticky')
+        }
+    })
 
     // Animate the scroll to top
     $('.go-top').click(function (event) {

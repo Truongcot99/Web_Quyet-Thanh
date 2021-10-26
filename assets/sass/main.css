@@ -270,6 +270,10 @@ body.noscroll {
   .hide-mobile {
     display: none !important;
   }
+  .box-header {
+    padding-top: 36px;
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -334,6 +338,15 @@ body.noscroll {
 
 .header {
   background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+}
+
+.header.sticky {
+  -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -1031,6 +1044,11 @@ body.noscroll {
     width: 170px;
     height: 170px;
   }
+  .category-product-quantity {
+    padding: 10px 8px;
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .product {
@@ -1174,6 +1192,9 @@ body.noscroll {
   }
   .product-nav > * {
     scroll-snap-align: start;
+  }
+  .product-item {
+    margin-bottom: 0;
   }
 }
 
@@ -1374,7 +1395,7 @@ body.noscroll {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    grid-auto-columns: 70%;
+    grid-auto-columns: 48%;
     grid-auto-flow: column;
     overflow: auto;
     overflow-y: hidden;
@@ -1394,6 +1415,18 @@ body.noscroll {
   }
   .posts-list > * {
     scroll-snap-align: start;
+  }
+  .posts-heading {
+    margin-bottom: 12px;
+  }
+  .posts-content {
+    padding: 24px 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .posts-list {
+    grid-auto-columns: 80%;
   }
 }
 
@@ -1432,6 +1465,24 @@ body.noscroll {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .numbers {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .numbers-content {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+  .numbers-img {
+    margin-bottom: 0;
+  }
+  .numbers-quantity {
+    font-size: 1.75em;
+    margin-bottom: 0;
+  }
+}
+
 .partner {
   padding-bottom: 45px;
   background-color: #FBBB12;
@@ -1440,6 +1491,10 @@ body.noscroll {
 .partner-heading {
   padding-top: 24px;
   padding-bottom: 36px;
+}
+
+.partner-list {
+  padding: 0 20px;
 }
 
 .partner-img {
@@ -1495,9 +1550,6 @@ body.noscroll {
 }
 
 @media screen and (max-width: 1023px) {
-  .partner-list {
-    padding: 0 20px;
-  }
   .partner .chevron-prev {
     left: -2%;
   }
@@ -1618,6 +1670,13 @@ body.noscroll {
 .footer .copy-right {
   padding: 27px 0;
   background-color: #F4F4F4;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-column:nth-child(2) {
+    -webkit-transform: translateY(58px);
+            transform: translateY(58px);
+  }
 }
 
 @media screen and (max-width: 767px) {

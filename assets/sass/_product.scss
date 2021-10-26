@@ -131,6 +131,10 @@
               scroll-snap-align: start;
             }
         }
+
+        &-item {
+            margin-bottom: 0;
+        }
     }
     
 }

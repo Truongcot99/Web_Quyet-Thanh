@@ -32,3 +32,23 @@
         letter-spacing: 2px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .numbers {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        &-content {
+            padding-top: 32px;
+            padding-bottom: 12px;
+        }
+
+        &-img {
+            margin-bottom: 0;
+        }
+
+        &-quantity {
+            font-size: 1.75em;
+            margin-bottom: 0;
+        }
+    }
+}

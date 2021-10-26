@@ -83,6 +83,13 @@
         background-color: #F4F4F4;
     }
 }
+@media screen and (max-width: 1023px) {
+.footer-column:nth-child(2) {
+    transform: translateY(58px);
+}
+}
+
+
 @media screen and (max-width: 767px) {
     .footer {
         &-container {

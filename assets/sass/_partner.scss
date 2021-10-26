@@ -5,6 +5,10 @@
         padding-top: 24px;
         padding-bottom: 36px;
     }
+
+    &-list {
+        padding: 0 20px;
+    }
     
     &-img {
         cursor: pointer;
@@ -47,11 +51,6 @@
 
 @media screen and (max-width: 1023px) {
     .partner {
-
-        &-list {
-            padding: 0 20px;
-        }
-
         .chevron-prev {
             left: -2%;
         }

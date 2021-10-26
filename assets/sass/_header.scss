@@ -1,5 +1,12 @@
 .header {
     background-color: white;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+
+    &.sticky {
+        box-shadow: 0 6px 6px rgba($color: #000000, $alpha: 0.2);
+    }
 
     &-container {
         display:flex;

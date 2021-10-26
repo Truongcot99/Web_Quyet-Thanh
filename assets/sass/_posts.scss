@@ -89,7 +89,7 @@
     .posts-list {
             display: grid;
             justify-content: flex-start;
-            grid-auto-columns: 70%;
+            grid-auto-columns: 48%;
             grid-auto-flow: column;
             // grid-gap: 1rem;
             overflow: auto;
@@ -109,4 +109,18 @@
               scroll-snap-align: start;
             }
     }
+    .posts-heading {
+        margin-bottom: 12px;
+    }
+
+    .posts-content {
+        padding: 24px 12px;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .posts-list {
+        grid-auto-columns: 80%;
+    }
+}
+
