@@ -1,10 +1,15 @@
 .post {
 
+    // &-body {
+    //     padding: 24px 15px;
+    //     box-shadow: 0 0 6px rgba($color: #000000, $alpha: 0.3);
+    // }
+
     &-heading {
         position: relative;
         text-align: left;
         font-size: 2em;
-        margin-bottom: 48px;
+        margin-bottom: 24px;
         font-family: $font-heading;
         line-height: 46px;
         color: $green-color;
@@ -75,6 +80,68 @@
             bottom: -12px;
         }
     }
+
+    &-meta {
+        font-family: Open sans;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+    
+        span {
+            font-size: 1rem;
+            i {
+                margin-right: 8px;
+                font-size: 1rem;
+            }
+        }
+    
+        .share-social {
+            list-style: none;
+            display: flex;
+    
+            li {
+                margin-left: 8px;
+    
+                
+                button {
+                    border: none;
+                    color: white;
+                    padding: 4px 8px;
+                    line-height: 18px;
+    
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    i {
+                        font-size: 0.875rem;
+                        padding-right: 8px;
+    
+                        }
+                    }
+    
+                    span {
+                        font-size: 0.875rem;
+                    }
+                }
+    
+                .btn-facebook {
+                    background-color: #4267b2;
+                }
+    
+                .btn-twitter {
+                    background: #1b95e0;
+                }
+    
+                .btn-instagram {
+                    background-color: #b02f95;
+                }
+    
+                .btn-linkedin {
+                    background-color: #0e76a8;
+                }
+            }
+        }
 
     &-list {
         list-style: none;
@@ -191,6 +258,14 @@
         &-heading {
             font-size: 1.5em;
             line-height: 40px;
+        }
+
+        &-meta {
+            display: block;
+        }
+
+        .share-social {
+            margin-top: 16px;
         }
 
         &-link h2{

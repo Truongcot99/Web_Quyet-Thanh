@@ -220,6 +220,7 @@ body.noscroll {
 
 .breadcrumb {
   background-color: #e9ecef;
+  justify-content: center;
 }
 .breadcrumb-item {
   line-height: 22px;
@@ -421,6 +422,7 @@ body.noscroll {
   }
   .header.active .header-menu {
     transform: translateX(0);
+    border-top: 0.5px solid #00844A;
   }
   .header.active .header-toggle span {
     background-color: red;
@@ -1343,59 +1345,85 @@ body.noscroll {
     width: 30px;
     height: 30px;
   }
+  .footer-social ul li {
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+  }
+  .footer-social ul li a {
+    padding: 8px;
+  }
 }
 .contact {
   padding-top: 60px;
   padding-bottom: 48px;
 }
-.contact-title {
-  font-size: 2em;
-  font-family: "UTM HelvetIns";
-  margin-bottom: 24px;
-  display: block;
-  color: #F68124;
-}
 .contact-content {
-  padding-left: 40px;
-  padding-right: 10px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+}
+.contact-title {
+  font-size: 1.75em;
+  font-family: "UTM HelvetIns";
+  margin-bottom: 36px;
+  display: block;
+  color: white;
+  text-align: center;
+}
+.contact-info {
+  padding: 30px 0;
+  background-color: #00844A;
 }
 .contact-desc {
   margin-bottom: 20px;
   max-width: 440px;
 }
-.contact-info p {
+.contact-detail {
+  padding: 0 20px;
+}
+.contact-detail p {
   font-size: 1em;
   margin-bottom: 16px;
+  color: white;
 }
-.contact-info p i {
-  color: #F68124;
+.contact-detail p i {
+  color: white;
   margin-right: 8px;
 }
-.contact-info p a {
-  color: black;
+.contact-detail p a {
+  color: white;
 }
-.contact-info p a:hover {
+.contact-detail p a:hover {
   color: #F68124;
 }
+.contact #message,
 .contact .form-control {
-  font-size: 1rem;
+  width: 100%;
+  font-size: 0.875rem;
   font-family: "UTM Neo Sans Intel";
-  margin-bottom: 20px;
   padding: 16px 8px;
-  border-radius: 10px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #00844A;
+  outline: none;
+}
+.contact .form-row {
+  padding: 36px 48px 36px 20px;
 }
 
 @media screen and (max-width: 1023px) {
   .contact-content {
-    padding: 0 15px;
-    margin-top: 30px;
+    padding: 24px 15px;
+  }
+
+  .form-row {
+    padding: 0 !important;
   }
 }
 .post-heading {
   position: relative;
   text-align: left;
   font-size: 2em;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   font-family: "UTM HelvetIns";
   line-height: 46px;
   color: #00844A;
@@ -1453,6 +1481,55 @@ body.noscroll {
   background-color: #F68124;
   left: 0;
   bottom: -12px;
+}
+.post-meta {
+  font-family: Open sans;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.post-meta span {
+  font-size: 1rem;
+}
+.post-meta span i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+.post-meta .share-social {
+  list-style: none;
+  display: flex;
+}
+.post-meta .share-social li {
+  margin-left: 8px;
+}
+.post-meta .share-social li button {
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  line-height: 18px;
+}
+.post-meta .share-social li button:hover {
+  opacity: 0.8;
+}
+.post-meta .share-social li button i {
+  font-size: 0.875rem;
+  padding-right: 8px;
+}
+.post-meta .share-social li span {
+  font-size: 0.875rem;
+}
+.post-meta .share-social .btn-facebook {
+  background-color: #4267b2;
+}
+.post-meta .share-social .btn-twitter {
+  background: #1b95e0;
+}
+.post-meta .share-social .btn-instagram {
+  background-color: #b02f95;
+}
+.post-meta .share-social .btn-linkedin {
+  background-color: #0e76a8;
 }
 .post-list {
   list-style: none;
@@ -1542,6 +1619,12 @@ body.noscroll {
   .post-heading {
     font-size: 1.5em;
     line-height: 40px;
+  }
+  .post-meta {
+    display: block;
+  }
+  .post .share-social {
+    margin-top: 16px;
   }
   .post-link h2 {
     font-size: 0.875em;

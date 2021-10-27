@@ -77,34 +77,43 @@
             </div>
         </div>
     </header>
-    <section class="contact overflow-hidden">
-        <div class="container container-contact">
-            <div class="row">
-                <div class="col-lg-6 contact-map" data-aos="fade-left">
-                    <span class="contact-title">
-                        Bản đồ
-                    </span>
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119085.8998891821!2d104.09299143655151!3d21.135105152346306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3132511610dd48fd%3A0xeea785febee87fb2!2zQ8OyIE7DsmksIE1haSBTxqFuLCBTxqFuIExhLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1635177735040!5m2!1svi!2s"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
-
-
+    <section class="contact">
+        <div class="container contact-container">
+            <div class="row no-gutters contact-content">
+                <div class="col-lg-8">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" class="form-control" id="uname" placeholder="Tên của bạn"
+                                    name="uname">
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" class="form-control" id="email" placeholder="Địa chỉ Email"
+                                    name="email">
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại"
+                                    name="phone">
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" class="form-control" id="email" placeholder="Tiêu đề" name="title">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <textarea name="message" id="message" rows="8" placeholder="Nội dung"></textarea>
+                            </div>
+                            <button type="submit" class="btn mb-lg-0 mb-4">Gửi thông tin</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="contact-content col-lg-6" data-aos="fade-right">
+                <div class="col-lg-4 contact-info">
                     <span class="contact-title">
                         Thông tin liên hệ
                     </span>
-                    <p class="contact-desc">
-                        Hãy liên hệ ngay với chúng tôi để nhận được nhiều ưu đãi hấp dẫn dành cho bạn!
-                    </p>
-                    <div class="contact-info">
+                    <div class="contact-detail">
                         <p>
                             <i class="fas fa-map-marker-alt"></i>
                             <strong>Địa chỉ:</strong>
-                            Tiểu khu 39, xã Cò Nòi, huyện Mai Sơn, Tỉnh Sơn La
+                            Tiểu khu Khí Tượng, thị trấn Nông trường Mộc Châu
                         </p>
                         <p>
                             <i class="fas fa-envelope"></i>
@@ -117,22 +126,11 @@
                             <a href="tel:+0866873100">0866873100</a>
                         </p>
                     </div>
-                    <div class="contact-form">
-                        <from class="form-group" novalidate>
-                            <input type="text" class="form-control" id="name" placeholder="Họ và tên*" required>
-                            <div class="valid-feedback">
-                                Vui lòng nhập họ tên!
-                            </div>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            <input type="text" class="form-control" id="phone" placeholder="Điện thoại*" required>
-                            <div class="valid-feedback">
-                                Vui lòng nhập số điện thoại
-                            </div>
-                            <textarea class="form-control" rows="4" id="comment" placeholder="Nội dung"></textarea>
-                            <button class="btn" type="submit">Gửi thông tin</button>
-                        </from>
-                    </div>
                 </div>
+            </div>
+            <div class="contact-map embed-responsive embed-responsive-16by9 mt-lg-5 mt-4">
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.4975276928635!2d104.69157461479193!3d20.892293786072518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313395f474d3d5c1%3A0x82342975057c55d4!2zSFRYIFF1eeG6v3QgVGhhbmggTeG7mWMgQ2jDonU!5e0!3m2!1svi!2s!4v1635301650334!5m2!1svi!2s"></iframe>
             </div>
         </div>
     </section>
@@ -142,7 +140,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 footer-column">
+                <div class="col-lg-4 col-6 footer-column">
                     <img src="../assets/image/logo-quyetthanh.png" alt="" class="footer-logo logo">
                     <h2 class="footer-heading text-medium  pb-3">HTX Nông nghiệp Quyết Thanh Mộc Châu</h2>
                     <div class="footer-contact">
@@ -172,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-column">
+                <div class="col-lg-3 col-6 footer-column">
                     <div class="footer-heading text-medium pb-3">
                         Chính sách
                     </div>
@@ -202,7 +200,7 @@
                         <img srcset="../assets/image/da-thong-bao-bo-cong-thuon.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-6 footer-column">
+                <div class="col-lg-2 col-6 footer-column">
                     <div class="footer-heading text-medium pb-3">
                         Thông tin
                     </div>
@@ -239,17 +237,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-column">
+                <div class="col-lg-3 col-6 footer-column">
                     <div class="footer-heading text-medium pb-3">
                         Fanpage
                     </div>
-                    <div class="embed-responsive embed-responsive-4by3">
+                    <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item"
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThietkewebsite.vico&tabs=timeline&width=247&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                            style="border:none;overflow:hidden" width="100%" height="100%" scrolling="no"
-                            frameborder="0" allowfullscreen="true"
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                        </iframe>
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThietkewebsite.vico&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <div class="footer-social">
                         <ul>
