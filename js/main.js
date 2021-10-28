@@ -65,6 +65,25 @@ $(document).ready(function () {
         ]
     })
 
+    // slick product detail
+    $(".product-detail-img").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.product-detail-thumbnail',
+    });
+
+    $(".product-detail-thumbnail").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.product-detail-img',
+        prevArrow: '<button class="chevron-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button class="chevron-next"><i class="fas fa-chevron-right"></i></button>',
+        centerMode: true,
+        centerPadding: 0,
+        focusOnSelect: true
+    });
+
     $('.header-toggle').click(function () {
         $('.header').toggleClass('active')
         $('body').toggleClass('noscroll')
@@ -99,4 +118,30 @@ $(document).ready(function () {
 
         $('html, body').animate({ scrollTop: 0 }, 300);
     })
+
+    // quantity product
+    $('.plus').click(function add() {
+        var quantity = $(".in-num");
+        var count = quantity.val();
+
+        count++;
+        $(".minus").attr("disabled", !count);
+        quantity.val(count);
+    });
+    $(".minus").attr("disabled", !$(".in-num").val());
+
+    $('.minus').click(function minusButton() {
+        var quantity = $(".in-num");
+        var count = quantity.val();
+        if (count >= 2) {
+            count--;
+            quantity.val(count);
+        } else {
+            $(".minus").attr("disabled", true);
+        }
+    })
+    $('.in-num').on('change keyup focus', function () {
+        var removeLetters = $(this).val().replace(/[^0-9]/g, '');
+        $(this).val(removeLetters);
+    });
 })

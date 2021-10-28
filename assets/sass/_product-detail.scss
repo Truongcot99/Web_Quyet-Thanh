@@ -1,0 +1,128 @@
+.product-detail {
+    background-color: #F5F5F5;
+
+    &-content {
+        background-color: white;
+    }
+
+    .chevron-prev,
+    .chevron-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 16px;
+        height: 32px;
+        border: none;
+        background-color: rgba($color: black, $alpha: 0.3);
+
+        i {
+            color: white;
+        }
+    }
+
+    .chevron-prev {
+        left: 0;
+    }
+    .chevron-next {
+        right: 0;
+    }
+
+    &-name {
+        font-size: 1.5rem;
+        font-family: $font-heading;
+        line-height: 32px;
+        color: $green-color;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        color: $orange-color;
+        font-weight: 700;
+    }
+
+    ul {
+        list-style: none;
+        li {
+            line-height: 25px;
+        }
+    } 
+
+    button {
+        border: none;
+        outline: none;
+    }
+
+    .option {
+
+        button{
+            min-width: 90px;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            margin-left: 16px;
+            background-color: #e9ecef;
+        }
+
+        button.active {
+            border-color: $orange-color;
+        }
+    } 
+
+    .quantity {
+        height: 30px;
+        display: flex;
+        text-align: center;
+        
+        button {
+            width: 30px;
+            border: 1px solid #ccc;
+            padding: 1px 6px;
+            background-color: #e9ecef;
+        }
+
+        strong {
+            margin-right: 16px;
+        }
+
+        input {
+            margin: 0 4px;
+            text-align: center;
+            width: 60px;
+        }
+    } 
+
+    .sidebar {
+        ul li:not(:last-child) {
+            margin-bottom: 12px;
+            border-bottom: 1px solid $green-color;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+
+    h3 {
+        font-size: 1rem !important;
+        margin: 4px 0;
+    }
+
+    span {
+        display: block;
+        font-size: 1rem !important;
+        color: $orange-color;
+    }
+    button:disabled {
+        background-color: white;
+        cursor: default;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .sidebar {
+        ul li {
+            border-bottom: none !important;
+        }
+    }
+}

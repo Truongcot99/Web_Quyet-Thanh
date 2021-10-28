@@ -116,9 +116,16 @@ body {
 	background-color: $orange-color;
 }
 
+em {
+    font-size: 0.875em;
+}
+
+.bg-secondary {
+    background-color: #e9ecef !important;
+}
+
 .breadcrumb {
-    background-color: #e9ecef;
-    justify-content: center;
+    background-color: transparent;
     &-item {
         line-height: 22px;
 

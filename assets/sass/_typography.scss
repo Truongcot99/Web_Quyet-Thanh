@@ -21,6 +21,12 @@
     color: black;
     margin-bottom: 16px;
 
+    &-xl {
+        color: $orange-color;
+        font-size: 1.25em;
+        line-height: 32px;
+    }
+
     &-medium {
         font-size: 1.125em;
         line-height: 25px;
