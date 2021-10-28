@@ -70,13 +70,12 @@
                 right: 0;
                 height: 2px;
                 background-color: $orange-color;
-                transform-origin: bottom right;
+                transform-origin: center;
                 transform: scaleX(0);
-                transition: transform 0.5s ease;
+                transition: transform 0.3s ease;
               }
               
               &:hover::before {
-                transform-origin: bottom left;
                 transform: scaleX(1);
               }
         }

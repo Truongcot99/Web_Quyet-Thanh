@@ -120,10 +120,9 @@ $(document).ready(function () {
     })
 
     // quantity product
+    var quantity = $(".in-num");
+    var count = quantity.val();
     $('.plus').click(function add() {
-        var quantity = $(".in-num");
-        var count = quantity.val();
-
         count++;
         $(".minus").attr("disabled", !count);
         quantity.val(count);
@@ -131,8 +130,6 @@ $(document).ready(function () {
     $(".minus").attr("disabled", !$(".in-num").val());
 
     $('.minus').click(function minusButton() {
-        var quantity = $(".in-num");
-        var count = quantity.val();
         if (count >= 2) {
             count--;
             quantity.val(count);
